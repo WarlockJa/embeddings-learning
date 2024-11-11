@@ -112,3 +112,10 @@ enabled = true
 # [[vectorize]]
 # binding = "MY_INDEX"
 # index_name = "my-index"
+
+[[vectorize]]
+binding = "VECTORIZE" # available in your Worker on env.VECTORIZE
+index_name = "embeddings-index"
+
+[ai]
+binding = "AI" # available in your Worker on env.AI
